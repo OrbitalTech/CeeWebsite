@@ -5,52 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <style>
+    @font-face {
+    font-family: "Andes";
+    src: url(Cee_Fonts/cee_andes/AndesNeueAlt2-Black.ttf)
+    }
+    @font-face {
+      font-family: "sans";
+      src: url(Cee_Fonts/cee_sans/WorkSans-Regular.ttf);
+    }
     .cee-button:hover{
       color:#171729;
       background-color:#B6BEF6 !important;
       transition:0.2s;
     }
-    @font-face {
-    font-family: "AndesNueue";
-    src: url("https://yoursite.com/css/fonts/CustomFont.eot");
-    src: url("https://yoursite.com/css/fonts/CustomFont.woff") format("woff"),
-    url("https://yoursite.com/css/fonts/CustomFont.otf") format("opentype"),
-    url("https://yoursite.com/css/fonts/CustomFont.svg#filename") format("svg");
+    /* edit fonts of h1 and h2 to andes, MUST BE EDITTED LATER */
+    .cee-header{
+      font-family: 'Andes', sans-serif !important;
+      font-size:50px;
+      color:#374FC4;
+      line-height: 100%;
     }
-
+    .cee-subheader{
+      font-family: 'sans', sans-serif !important;
+      color:#171729;
+      font-size: 15px;
+    }
+    .cee-download{
+      color: #fff;
+      background-color: #374FC4;
+      font-family: 'sans', sans-serif !important;
+      font-size:12px;
+      padding:16px;
+    }
   </style>
 </head>
 <body style="background-color:#ECEEFD">
   <div class="w3-container">
     <header>
-      <div class="w3-row">
-        <div class="w3-col m4 w3-padding  w3-center">
+      <div class="w3-cell-row w3-padding-32">
+        <div class="w3-cell w3-cell-middle w3-mobile">
           <img src="assets/logo_slogan.png" />
         </div>
-        <div class="w3-col m4 w3-padding  w3-center">
-          <div class="w3-panel w3-round-xxlarge w3-white w3-xlarge w3-padding">
+        <div class="w3-cell w3-cell-middle w3-mobile">
+          <div class="w3-panel w3-round-xxlarge w3-white w3-xlarge">
             <a href="#" class="w3-bar-item cee-button w3-button w3-round-xxlarge">Home</a>
             <a href="#" class="w3-bar-item cee-button w3-button w3-round-xxlarge">Link 1</a>
             <a href="#" class="w3-bar-item cee-button w3-button w3-round-xxlarge">Link 2</a>
             <a href="#" class="w3-bar-item cee-button w3-button w3-round-xxlarge">Link 3</a>
           </div>
         </div>
-        <div class="w3-col m4 w3-padding w3-center ">
+        <div class="w3-cell w3-cell-middle w3-mobile">
           <img src="assets/download_pill.png" />
         </div>
       </div>
     </header>
-
-
     <div class="w3-row">
-      <div class="w3-col l3 m6 w3-green w3-center">
-        <h1>Ready to get more out of work and driving?</h1>
-        <h3>We’ve worked extensively in terms of geography and sector, developing a variety of work — products.</h3>
-        <button class="w3-button w3-white w3-border w3-border-red w3-round-large">Button</button>
-
+      <div class="w3-col l4 m6">
+        <div class="cee-header">Ready to get <br>more out of work <br>and driving?</div>
+        <br>
+        <div class="cee-subheader">We’ve worked extensively in terms of geography and sector, developing a variety of work — products.</div>
+        <br>
+        <button class="w3-button w3-round w3-round-xxlarge cee-download">Download now</button>
+        <br>
+        <br>
+        <div class="w3-cell">
+            <img src="assets/ceeDrivers.png"/>
+            <div class="cee-subheader" style="font-size:12px; display:inline">+1k Drivers Subscribed to cee</div>
+        </div>
       </div>
-      <div class="w3-col l9 m6  w3-center">
-        <p>s9</p>
+      <div class="w3-col l8 m6  w3-center">
+        
       </div>
     </div>
   </div>
