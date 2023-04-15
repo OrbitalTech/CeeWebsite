@@ -10,6 +10,10 @@
     src: url(Cee_Fonts/cee_andes/AndesNeueAlt2-Black.ttf)
     }
     @font-face {
+    font-family: "Andes-lighter";
+    src: url(Cee_Fonts/cee_andes/AndesNeueAlt2-Medium.ttf)
+    }
+    @font-face {
       font-family: "sans";
       src: url(Cee_Fonts/cee_sans/WorkSans-Regular.ttf);
     }
@@ -37,6 +41,40 @@
       font-size:12px;
       padding:16px;
     }
+    .cee-download-modal{
+      font-family: 'Andes-lighter', sans-serif !important;
+      font-size:40px;
+      color:#374FC4;
+      font-weight: bold;
+    }
+    .ceeSlide{
+      position: relative;
+    }
+    .ceeSlide img{
+      position: absolute;
+    }
+    .ceeSlide #ceePhone{
+      left:50%;
+    }
+    .ceeSlide #ceeIcons{
+      left:35%;
+      top:200px;
+    }
+    .ceeSlide #ceeGauge{
+      left:70%;
+      top:100px;
+      z-index: 1;
+
+    }
+    .ceeSlide #ceePremium{
+      left:27%;
+      top:400px;
+      z-index: 1;
+    }
+    .ceeSlide #ceeArrow{
+      left:20%;
+      top:300px;
+    }
   </style>
 </head>
 <body style="background-color:#ECEEFD">
@@ -55,12 +93,13 @@
           </div>
         </div>
         <div class="w3-cell w3-cell-middle w3-mobile">
-          <img src="assets/download_pill.png" />
+          <img onclick="document.getElementById('id01').style.display='block'" src="assets/download_pill.png" />
         </div>
       </div>
     </header>
     <div class="w3-row">
       <div class="w3-col l4 m6">
+        <br><br><br><br><br>
         <div class="cee-header">Ready to get <br>more out of work <br>and driving?</div>
         <br>
         <div class="cee-subheader">We’ve worked extensively in terms of geography and sector, developing a variety of work — products.</div>
@@ -73,10 +112,30 @@
             <div class="cee-subheader" style="font-size:12px; display:inline">+1k Drivers Subscribed to cee</div>
         </div>
       </div>
-      <div class="w3-col l8 m6  w3-center">
-        
+      <div class="w3-col l8 m6">
+        <div class="ceeSlide">
+          <img id="ceeArrow" src="assets/ceeArrow.png"/>
+          <img id="ceeIcons" src="assets/ceeIcons.png"/>
+          <img id="ceeGauge" src="assets/ceeGauge.png"/>
+          <img id="ceePremium" src="assets/ceePremium.png"/>
+          <img id="ceePhone" src="assets/ceePhone.png"/>
+        </div>
       </div>
     </div>
+    <!-- MODAL -->
+    
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-round-xxlarge" style="background-color: #B6BEF6; width:650px">
+      <header class="w3-container w3-center" style="background-color: #B6BEF6; border-radius:16px 16px 0px 0px"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright w3-round-xxlarge" style="background-color:white; top:-50px; font-family: 'sans', sans-serif ">Close</span>
+        <h2 class="cee-download-modal">Download Cee App</h2>
+      </header>
+      <div class="w3-container w3-white w3-center w3-round-xxlarge w3-padding-32">
+        <img src="assets/ceeQR.png" />
+      </div>
+    </div>
+  </div>
   </div>
 </body>
 
