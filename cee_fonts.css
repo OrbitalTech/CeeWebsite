@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Andes";
+    src: url(Cee_Fonts/cee_andes/AndesNeueAlt2-Black.ttf)
+    }
+    @font-face {
+    font-family: "Andes-lighter";
+    src: url(Cee_Fonts/cee_andes/AndesNeueAlt2-Medium.ttf)
+    }
+    @font-face {
+      font-family: "sans";
+      src: url(Cee_Fonts/cee_sans/WorkSans-Regular.ttf);
+    }
