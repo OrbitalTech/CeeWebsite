@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cee- Your Driving Assistant</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/logo-head.png">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="cee_fonts.css" />
+  <style>
+    .cee-hr{
+      border-top:1px solid #BDBECA
+    }
+    .cee-purple{
+      background-color:#374FC4;
+      color:white;
+      transform:scale(1.5);
+    }
+    footer a{
+      text-decoration: none;
+    }
+    .cee-download {
+      color: #fff;
+      background-color: #374FC4;
+      font-family: 'sans', sans-serif !important;
+      font-size: 12px;
+      padding: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+  <div class="w3-content" style="max-width:1600px">
+    <!-- Navbar -->
+    <header class="w3-center">
+      <div class="w3-cell-row w3-padding-32">
+        <div class="w3-cell w3-cell-middle w3-mobile">
+          <img src="assets/logo_slogan.png" />
+        </div>
+        <div class="w3-cell w3-cell-middle w3-mobile w3-border w3-round-xxlarge">
+          <div class="w3-round-xxlarge w3-white w3-xlarge w3-padding" style="max-width:fit-content">
+            <a href="#" class="w3-bar-item cee-button w3-button w3-round-xxlarge">Home</a>
+            <a href="#" class="w3-bar-item cee-button w3-button w3-round-xxlarge">About</a>
+          </div>
+        </div>
+        <div class="w3-cell w3-cell-middle w3-mobile">
+          <img onclick="document.getElementById('id01').style.display='block'" src="assets/download_pill.png" />
+        </div>
+      </div>
+    </header>
+    <!-- Navbar/ END-->
+    <div class="w3-row-padding w3-margin">
+        <div class="w3-half">
+            <div class="w3-round-xlarge" style="background-color: #F9EFFD;">
+                <div class="w3-container">
+                    <h1 style="color:#C350EB">Terms & <br> Conditions</h1>
+                    <div>
+                        Our agreement with you
+                    </div>
+                    <button class="cee-download" style="background-color: #C350EB;">Read Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-half">
+            <div class="w3-round-xlarge" style="background-color: #EBF8FF;">
+                <div class="w3-container">
+                    <h1 style="color:#36B5FF">Privacy <br> Policy</h1>
+                    <div>
+                        Need a question answered fast? You’ll find your answers in the Cee FAQs.                    
+                    </div>
+                    <button class="cee-download" style="background-color:#36B5FF">Read Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-48 w3-round-xxlarge" style="background-color: #F9EFFD";>
+      <div class="w3-row">
+        <div class="w3-col l4 m4 s12 w3-padding">
+          <img src="assets/logo.png" class="w3-margin-bottom"/>
+          <br>
+          <div>
+            We’ve worked extensively in terms of geography and sector, developing a variety of work .
+          </div>
+        </div>
+        <div class="w3-col l2 m2 s12 w3-padding">
+          <h3>headers</h3>
+          <br>
+          <a>link 1</a>
+          <a>link 2</a>
+        </div>
+        <div class="w3-col l2 m2 s12 w3-padding">
+          <h3>headers</h3>
+          <br>
+          <a>link 1</a>
+          <a>link 2</a>
+        </div>
+        <div class="w3-col l4 m4 s12 w3-padding">
+          <h3>headers</h3>
+          <br>
+          <a>link 1</a>
+          <a>link 2</a>
+        </div>
+      </div>
+      <div class="w3-row">
+        <div class="w3-col l6 m6 s12 w3-padding">
+          <button class="w3-button w3-round w3-round-xxlarge cee-download">Download now</button>
+        </div>
+        <div class="w3-col l6 m6 s12">
+         <button class="w3-button w3-circle cee-purple"><a href="#" class="fa fa-twitter"></a></button>
+         <button class="w3-button w3-circle cee-purple"><a href="#" class="fa fa-instagram"></a></button>
+         <button class="w3-button w3-circle cee-purple"><a href="#" class="fa fa-youtube"></a></button>
+         </div>
+      </div>
+      <hr class="cee-hr">
+      <div class="w3-row w3-padding-32 w3-margin">
+        <div class="w3-col l6 m6 s12 ">
+          <div class="w3-bar">
+            <a class="w3-bar-item" href="#">Cookies</a>
+            <a class="w3-bar-item" href="#">Privacy Policy</a>
+            <a class="w3-bar-item" href="#">Terms</a>
+            <a class="w3-bar-item" href="#">Help Center</a>
+            <a class="w3-bar-item" href="#">FAQ</a>
+          </div>
+        </div>
+        <div class="w3-col l6 m6 s12">
+          <div class="w3-bar">
+            <span class="w3-bar-item">2023 © Cee. All rights reserved. Powered by orbital studio</span>
+          </div>        
+        </div>
+      </div>
+    </footer>
+    <!-- END w3-content -->
+  </div>
+
+
+</body>
+
+</html>
