@@ -67,6 +67,13 @@
     left: 20%;
     top: 300px;
   }
+
+  .ceeSlide #ceeSpeeds {
+    left: 70%;
+    top: 400px;
+    z-index: 1;
+
+  }
   /* LANDING EN END */
 
   /*TERMS START */
