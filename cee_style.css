@@ -89,3 +89,24 @@
     padding: 16px;
   }
   /* TERMS END */
+
+  /* ABOUT START*/
+  .cee-hr{
+    border-top:1px solid #BDBECA
+  }
+  .cee-purple{
+    background-color:#374FC4;
+    color:white;
+    transform:scale(1.5);
+  }
+  footer a{
+    text-decoration: none;
+  }
+  .cee-download {
+    color: #fff;
+    background-color: #374FC4;
+    font-family: 'sans', sans-serif !important;
+    font-size: 12px;
+    padding: 16px;
+  }
+  /* ABOUT END */

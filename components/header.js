@@ -1,4 +1,11 @@
-<header class="w3-center">
+class Header extends HTMLElement {
+    constructor() {
+      super();
+    }
+  
+  connectedCallback() {
+    this.innerHTML = `
+    <header class="w3-center">
     <div class="w3-cell-row w3-padding-32">
       <div class="w3-cell w3-cell-middle w3-mobile">
         <img src="assets/logo_slogan.png" />
@@ -14,3 +21,9 @@
       </div>
     </div>
   </header>
+    `;
+  }
+
+}
+
+customElements.define('cee-footer', Header);
