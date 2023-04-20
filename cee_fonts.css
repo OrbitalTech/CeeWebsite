@@ -9,4 +9,14 @@
     @font-face {
       font-family: "sans";
       src: url(Cee_Fonts/cee_sans/WorkSans-Regular.ttf);
-    }
+  }
+
+.cee-andes{
+    font-family: 'Andes', sans-serif !important;
+}
+.cee-sans{
+    font-family: 'sans', sans-serif !important;
+}
+.cee-andes-light{
+    font-family: 'Andes-lighter', sans-serif !important;
+}
