@@ -116,4 +116,20 @@
     font-size: 12px;
     padding: 16px;
   }
+  .cee-footer-heading {
+    font-family: 'Andes', sans-serif !important;
+    font-size: 30px;
+    color: #374FC4;
+    line-height: 100%;
+  }
+  .cee-footer-list{
+    list-style: none; 
+    padding:0px;
+  }
+  .cee-footer-list li{
+    margin-bottom:5px;
+  }
+  .cee-footer-list li a{
+    text-decoration: none;
+  }
   /* ABOUT END */
