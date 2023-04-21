@@ -16,10 +16,6 @@
 
 
 <body>
-
-
-  <!-- w3-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
   <div class="w3-content" style="max-width:1600px">
     <!-- Navbar -->
     <header class="w3-center">
@@ -38,6 +34,7 @@ and is wrapped around the whole page content, except for the footer in this exam
         </div>
       </div>
     </header>
+
     <!-- Header -->
     <header class="w3-container w3-padding-48 w3-round-xxlarge" style="background-color: #EBF8FF" ;>
       <div class="w3-row cee-sans">
@@ -46,10 +43,11 @@ and is wrapped around the whole page content, except for the footer in this exam
             Home → Help & Support → Privacy Policy
           </div>
           <h1 class="cee-andes" style="color:#36B5FF; font-size:50px;">
-            Privacy Policy 
+            Privacy Policy
           </h1>
           <div>
-            Need a question answered fast? You’ll find your answers in the Cee FAQs. Or chat with our Support Team and they’ll lend a helping hand.
+            Need a question answered fast? You’ll find your answers in the Cee FAQs. Or chat with our Support Team and
+            they’ll lend a helping hand.
           </div>
         </div>
         <div class="w3-col l6 m6 s12">
@@ -58,17 +56,18 @@ and is wrapped around the whole page content, except for the footer in this exam
       </div>
     </header>
 
-
     <!-- Grid -->
     <div class="w3-row w3-padding">
-      <!-- About/Information menu -->
+      <!-- Left buttons -->
       <div class="w3-col l4">
-        <!-- pods on the left -->
+        <!-- Each h4 is the title of a tab -->
         <div class="w3-white w3-margin">
-          <div id="Tab1-button" class="w3-container w3-padding w3-margin-bottom w3-round-xlarge tab-button" onclick="openLegal('Tab1')" style="background-color: #36B5FF;color:#FFFFFF">
+          <div id="Tab1-button" class="w3-container w3-padding w3-margin-bottom w3-round-xlarge tab-button"
+            onclick="openLegal('Tab1')" style="background-color: #36B5FF;color:#FFFFFF">
             <h4>Tab 1</h4>
           </div>
-          <div id="Tab2-button" class="w3-container w3-padding w3-margin-bottom w3-round-xlarge tab-button" onclick="openLegal('Tab2')">
+          <div id="Tab2-button" class="w3-container w3-padding w3-margin-bottom w3-round-xlarge tab-button"
+            onclick="openLegal('Tab2')">
             <h4>Tab 2</h4>
           </div>
         </div>
@@ -76,10 +75,10 @@ and is wrapped around the whole page content, except for the footer in this exam
         <!-- END About/Intro Menu -->
       </div>
 
-      <!-- Blog entries -->
+      <!-- Legal entries -->
       <div class="w3-col l8 s12">
 
-        <!-- Blog entry -->
+        <!-- Legal paragraph -->
         <div id="Tab1" class="w3-container w3-white w3-margin w3-padding-large w3-animate-opacity legal">
           <h3>Tab1</h3>
           <div class="w3-justify">
@@ -114,7 +113,10 @@ and is wrapped around the whole page content, except for the footer in this exam
             </ul>
           </div>
         </div>
-        <div id="Tab2" class="w3-container w3-white w3-margin w3-padding-large w3-animate-opacity legal" style="display:none;">
+
+        <!-- Another Legal paragraph -->
+        <div id="Tab2" class="w3-container w3-white w3-margin w3-padding-large w3-animate-opacity legal"
+          style="display:none;">
           <h3>Tab2</h3>
           <div class="w3-justify">
             If you’re under the age required to manage your own Google Account, you must have your parent or legal
@@ -156,7 +158,7 @@ and is wrapped around the whole page content, except for the footer in this exam
         </div>
 
 
-        <!-- END BLOG ENTRIES -->
+        <!-- END LEGAL ENTRIES -->
         <hr>
       </div>
 
@@ -164,33 +166,33 @@ and is wrapped around the whole page content, except for the footer in this exam
       <!-- END GRID -->
     </div>
     <!-- Footer -->
-<cee-footer></cee-footer>
+    <cee-footer></cee-footer>
     <!-- END w3-content -->
   </div>
 
-<script>
-function openLegal(legalName) {
-  var i;
-  var x = document.getElementsByClassName("legal");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  document.getElementById(legalName).style.display = "block";
-  //legalName refers to the actual text
-  //legalName-button will refer to the pills
-  var i;
-  var x = document.getElementsByClassName("tab-button");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.backgroundColor = "#EBF8FF";
-    x[i].style.color = "#000000";
+  <script>
+    function openLegal(legalName) {
+      var i;
+      var x = document.getElementsByClassName("legal");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(legalName).style.display = "block";
+      //legalName refers to the actual text
+      //legalName-button will refer to the pills
+      var i;
+      var x = document.getElementsByClassName("tab-button");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.backgroundColor = "#EBF8FF";
+        x[i].style.color = "#000000";
 
-  }
-  legalButton = legalName + "-button";
-  document.getElementById(legalButton).style.backgroundColor = "#36B5FF";
-  document.getElementById(legalButton).style.color = "#FFFFFF";
+      }
+      legalButton = legalName + "-button";
+      document.getElementById(legalButton).style.backgroundColor = "#36B5FF";
+      document.getElementById(legalButton).style.color = "#FFFFFF";
 
-}
-</script>
+    }
+  </script>
 </body>
 
 </html>

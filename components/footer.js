@@ -5,7 +5,7 @@ class Footer extends HTMLElement {
   
   connectedCallback() {
     this.innerHTML = `
-    <footer class="w3-container w3-padding-32 w3-round-xxlarge cee-sans" style="background-color: #F9EFFD";>
+    <footer class="w3-container w3-padding-32 w3-round-xxlarge cee-sans" style="background-color: #ECEEFD";>
       <div class="w3-row">
         <div class="w3-col l4 m4 s12 w3-padding">
           <img src="assets/logo.png" class="w3-margin-bottom"/>
