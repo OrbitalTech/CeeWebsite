@@ -1,3 +1,92 @@
+/*CEE-NAV CLICKABLE SVG*/
+.svg-button {
+  position: relative;
+  display: inline-block;
+ }
+ .svg-button:after {
+   content: ""; 
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left:0;
+ }
+
+/* CEE-NAV */
+.cee-nav{
+	position: relative;
+	margin: 270px auto 0;
+	width: intrinsic; /* Safari/WebKit uses a non-standard name */
+	width: -moz-max-content; /* Firefox/Gecko */
+	width: -webkit-max-content; /* Chrome */
+	width: max-content;
+	height: 50px;
+	background: #FFFFFF;
+	border-radius: 50px;
+	font-size: 0;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+.cee-nav a{
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #171729;
+	text-decoration: none;
+	line-height: 50px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+}
+.cee-nav .animation{
+	position: absolute;
+	height: 40px;
+	/* height: 5px; */
+	top: 10%;
+	/* bottom: 0; */
+	margin-left:5px;
+	z-index: 0;
+	background: #B6BEF6;
+	border-radius: 40px;
+	transition: all .5s ease 0s;
+}
+.cee-nav a:nth-child(1){
+	width: 105px;
+}
+.cee-nav .start-home, a:nth-child(1):hover~.animation{
+	width: 100px;
+	left: 0;
+}
+.cee-nav a:nth-child(2){
+	width: 100px;
+}
+.cee-nav a:nth-child(2):hover~.animation{
+	width: 100px;
+	left: 100px;
+}
+.cee-nav a:nth-child(3){
+	width: 100px;
+}
+.cee-nav a:nth-child(3):hover~.animation{
+	width: 100px;
+	left: 200px;
+}
+.cee-nav a:nth-child(4){
+	width: 100px;
+}
+.cee-nav a:nth-child(4):hover~.animation{
+	width: 92px;
+	left: 302px;
+}
+.cee-nav a:nth-child(5){
+	width: 100px;
+}
+.cee-nav a:nth-child(5):hover~.animation{
+	width: 120px;
+	left: 300px;
+}
+
+
+
 /* LANDING_EN START */
 .cee-button:hover {
     color: #171729;
