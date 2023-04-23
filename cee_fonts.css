@@ -20,4 +20,24 @@
 .cee-andes-light{
     font-family: 'Andes-lighter', sans-serif !important;
 }
-
+/* SCROLLBAR CUSTOMIZED */
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        border-radius: 10px;
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #ECEEFD; 
+        border-radius: 10px;
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #374FC4;
+      }

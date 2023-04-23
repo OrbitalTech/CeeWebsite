@@ -7,7 +7,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
   <script src="https://kit.fontawesome.com/e013eccf66.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="cee_fonts.css" />
   <link rel="stylesheet" href="cee_style.css" />
@@ -19,7 +18,7 @@
 <body>
   <div class="w3-content" style="max-width:1600px">
     <!-- Navbar -->
-    <nav class="w3-center">
+    <header class="w3-center">
       <div class="w3-cell-row w3-padding-32">
         <div class="w3-cell w3-cell-middle w3-mobile">
           <img src="assets/logo_slogan.png" />
@@ -34,9 +33,9 @@
           <img onclick="document.getElementById('id01').style.display='block'" src="assets/download_pill.png" />
         </div>
       </div>
-    </nav>
+    </header>
 
-    <!-- Header POLICY -->
+    <!-- Header -->
     <header class="w3-container w3-padding-48 w3-round-xxlarge" style="background-color: #EBF8FF" ;>
       <div class="w3-row cee-sans">
         <div class="w3-col l6 m6 s12">
@@ -60,75 +59,43 @@
     <!-- Grid -->
     <div class="w3-row w3-padding">
       <!-- Left buttons -->
-      <div id="navId" class="w3-col l4">
+      <div class="w3-col l4">
         <!-- Each h4 is the title of a tab -->
         <div class="w3-white w3-margin">
-          <a href="#section-1">
-            <div id="section-button-1" class="w3-container w3-padding w3-margin-bottom w3-round-xlarge tab-button"
-              style="background-color: #36B5FF;color:#FFFFFF">
-              <h4>Cee Privacy Policy</h4>
-            </div>
-          </a>
-          <a href="#section-2">
-            <div id="section-button-2" class="w3-container w3-padding w3-margin-bottom w3-round-xlarge tab-button"
-              style="background-color: #36B5FF;color:#FFFFFF">
-              <h4>Cee Privacy Policy</h4>
-            </div>
-          </a>
-          <a href="#section-3">
-            <div id="section-button-3" class="w3-container w3-padding w3-margin-bottom w3-round-xlarge tab-button"
-              style="background-color: #36B5FF;color:#FFFFFF">
-              <h4>Cee Privacy Policy</h4>
-            </div>
-          </a>
-          <a href="#section-4">
-            <div id="section-button-4" class="w3-container w3-padding w3-margin-bottom w3-round-xlarge tab-button"
-              style="background-color: #36B5FF;color:#FFFFFF">
-              <h4>Cee Privacy Policy</h4>
-            </div>
-          </a>
-          <a href="#section-5">
-            <div id="section-button-5" class="w3-container w3-padding w3-margin-bottom w3-round-xlarge tab-button"
-              style="background-color: #36B5FF;color:#FFFFFF">
-              <h4>Cee Privacy Policy</h4>
-            </div>
-          </a>
-          <a href="#section-6">
-            <div id="section-button-6" class="w3-container w3-padding w3-margin-bottom w3-round-xlarge tab-button"
-              style="background-color: #36B5FF;color:#FFFFFF">
-              <h4>Section 6</h4>
-            </div>
-          </a>
-          <a href="#section-7" data-mdb-smooth-scroll="smooth-scroll">
-            <div id="section-button-7" class="w3-container w3-padding w3-margin-bottom w3-round-xlarge tab-button"
-              style="background-color: #36B5FF;color:#FFFFFF">
-              <h4>Cee Privacy Policy</h4>
-            </div>
-          </a>
+          <div id="Tab1-button" class="w3-container w3-padding w3-margin-bottom w3-round-xlarge tab-button"
+            onclick="openLegal('Tab1')" style="background-color: #36B5FF;color:#FFFFFF">
+            <h4>Cee PRIVACY POLICY</h4>
+          </div>
+          <div id="Tab2-button" class="w3-container w3-padding w3-margin-bottom w3-round-xlarge tab-button"
+            onclick="openLegal('Tab2')">
+            <h4>Cee PRIVACY POLICY</h4>
+          </div>
         </div>
         <hr>
         <!-- END About/Intro Menu -->
       </div>
 
       <!-- Legal entries -->
-      <div class="w3-col l8 s12" style="height:700px; overflow-y:scroll; scroll-behavior: smooth;">
+      <div class="w3-col l8 s12">
+
         <!-- Legal paragraph -->
-        <div class="w3-container w3-white w3-margin w3-padding-large">
-          <h3 id="section-1">Cee Privacy Policy</h3>
+        <div id="Tab1" class="w3-container w3-white w3-margin w3-padding-large w3-animate-opacity legal">
+          <h3>Cee PRIVACY POLICY</h3>
           <div class="w3-justify">
             At Orbital we care about your privacy. The purpose of this privacy policy is to be transparent and help you
             understand what information we collect, why we collect it and how we manage your information. </div>
-          <h3 id="section-2">Why do we process your personal data?</h3>
+          <h3>Why do we process your personal data?</h3>
           <div class="w3-justify">
             At Orbital we process the information you provide us in order to offer you the Cee services described in
             the 
             <a href="https://www.notion.so/Terms-And-Condition-Of-Use-Of-Cee-7ad5ec3e34674a41b48da4a26f46b5b2">
               Terms And Condition Of Use Of Cee
             </a>
+
             Through our advertising partners, we can also offer you advertising according to the information that you
             provide or we collect through the use of Cee.
           </div>
-          <h3 id="section-3">How do we collect your data?</h3>
+          <h3>How do we collect your data?</h3>
           <div class="w3-justify">
             You provide the data when you register or use Cee.
 
@@ -145,7 +112,7 @@
             In the event you do not approve our requests to use some or all of your personal data, it is possible that
             some of the functions or services of Cee may not be available.
           </div>
-          <h3 id="section-4">How long do we store your data?</h3>
+          <h3>How long do we store your data?</h3>
           <div class="w3-justify">
             The personal data provided shall be stored according to the following principles:
           </div>
@@ -156,7 +123,7 @@
             <li>To protect your rights.</li>
             <li>Because we have a contract in force with you.</li>
           </ul>
-          <h3 id="section-5">What legitimizes the processing of your data?</h3>
+          <h3>What legitimizes the processing of your data?</h3>
           <ul>
             <li>The data subject’s consent: you have consented to one or more specific processes. Before starting this
               processing we will have requested your consent.</li>
@@ -167,7 +134,7 @@
             <li>Legal compliance: when processing data is necessary in order to comply with the laws and regulations in
               force.</li>
           </ul>
-          <h3 id="section-6">Who will we send your data to?</h3>
+          <h3>Who will we send your data to?</h3>
           <ul>
             <li>Identifying data:Common personal data may include personal identification data, such as your name,
               address, e-mail address, telephone number, photograph, date of birth, IP address and other similar
@@ -224,13 +191,13 @@
               href="https://huq.io/privacy/">Huq Industries Limited Privacy Policy</a></p>
           <p><strong>CYBER COMPLIANCE, S.L.</strong> (Processor)<strong>Type of data:</strong> Identifying, usage and
             browsing.<a href="https://ecix.tech/politica-privacidad/">Cyber Compliance&rsquo; Privacy Policy</a></p>
-          <h3 id="section-1">Are your data processed outside the EU?</h3>
+          <h3>Are your data processed outside the EU?</h3>
           <p>If Orbital processors, technological partners or advertising partners process information outside the EU,
             such data would fall under the &ldquo;Privacy Shield&rdquo;, binding corporate regulations and contractual
             clauses. In the case of data controllers, you must consult their privacy policies to know exactly what they
             do with the data you provide them. You can do so by clicking on the privacy links we have provided above.
           </p>
-          <h3 id="section-7">What are your rights when you provide us data?</h3>
+          <h3>What are your rights when you provide us data?</h3>
           <p>Everyone has the right to receive confirmation as to whether Orbital is processing their personal data.</p>
           <ul>
             <li>Data subjects have the right to access their personal data, as well as request the rectification of any
@@ -260,6 +227,51 @@
           <p>To exercise any of your rights you must write an e-mail to</p>
           <p><em>Date this Privacy Policy was last updated: 18 January 2023.</em></p>
         </div>
+
+        <!-- Another Legal paragraph -->
+        <div id="Tab2" class="w3-container w3-white w3-margin w3-padding-large w3-animate-opacity legal"
+          style="display:none;">
+          <h3>Tab2</h3>
+          <div class="w3-justify">
+            If you’re under the age required to manage your own Google Account, you must have your parent or legal
+            guardian’s permission to use a Google Account. Please have your parent or legal guardian read these terms
+            with you.
+            If you’re a parent or legal guardian, and you allow your child to use the services, then these terms apply
+            to you and you’re responsible for your child’s activity on the services.
+            Some Google services have additional age requirements as described in their service-specific additional
+            terms and policies.
+          </div>
+          <h3>What's covered in these terms</h3>
+          <div class="w3-justify">
+            We know it’s tempting to skip these Terms of Service, but it’s important to establish what you can expect
+            from us as you use Google services, and what we expect from you.
+          </div>
+          <h3>What you can expect from us</h3>
+          <div class="w3-justify">
+            If you’re under the age required to manage your own Google Account, you must have your parent or legal
+            guardian’s permission to use a Google Account. Please have your parent or legal guardian read these terms
+            with you.
+            If you’re a parent or legal guardian, and you allow your child to use the services, then these terms apply
+            to you and you’re responsible for your child’s activity on the services.
+            Some Google services have additional age requirements as described in their service-specific additional
+            terms and policies.
+            These Terms of Service reflect the way Google’s business works, the laws that apply to our company, and
+            certain things we’ve always believed to be true. As a result, these Terms of Service help define Google’s
+            relationship with you as you interact with our services. For example, these terms include the following
+            topic headings:
+            <br>
+            <ul>
+              <li>What you can expect from us, which describes how we provide and develop our services</li>
+              <li>What we expect from you, which establishes certain rules for using our services</li>
+              <li>Content in Google services, which describes the intellectual property rights to the content you find
+                in our services — whether that content belongs to you, Google, or others</li>
+              <li>In case of problems or disagreements, which describes other legal rights you have, and what to expect
+                in case someone violates these terms</li>
+            </ul>
+          </div>
+        </div>
+
+
         <!-- END LEGAL ENTRIES -->
         <hr>
       </div>
@@ -271,6 +283,30 @@
     <cee-footer></cee-footer>
     <!-- END w3-content -->
   </div>
+
+  <script>
+    function openLegal(legalName) {
+      var i;
+      var x = document.getElementsByClassName("legal");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(legalName).style.display = "block";
+      //legalName refers to the actual text
+      //legalName-button will refer to the pills
+      var i;
+      var x = document.getElementsByClassName("tab-button");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.backgroundColor = "#EBF8FF";
+        x[i].style.color = "#000000";
+
+      }
+      legalButton = legalName + "-button";
+      document.getElementById(legalButton).style.backgroundColor = "#36B5FF";
+      document.getElementById(legalButton).style.color = "#FFFFFF";
+
+    }
+  </script>
 </body>
 
 </html>
