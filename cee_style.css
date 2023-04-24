@@ -35,6 +35,9 @@
 	text-align: center;
 }
 
+.cee-nav-mobile{
+  margin:auto;
+}
 .cee-nav .animation{
 	position: absolute;
 	height: 40px;
