@@ -7,15 +7,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <script src="https://kit.fontawesome.com/e013eccf66.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/e013eccf66.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="cee_fonts.css" />
   <link rel="stylesheet" href="cee_style.css" />
   <script src="components/footer.js" type="text/javascript" defer></script>
-
 </head>
+
 
 
 <body>
@@ -46,68 +44,103 @@
             Home → Help & Support → Terms & Conditions
           </div>
           <h1 class="cee-andes" style="color:#C350EB; font-size:50px;">
-            TERMS AND CONDITIONS
+            Terms and Conditions
           </h1>
           <div>
             Need a question answered fast? You’ll find your answers in the Cee FAQs. Or chat with our Support Team and
             they’ll lend a helping hand.
           </div>
         </div>
-        <div class="w3-col l6 m6 s12">
+        <div class="w3-col l6 m6 s12" style="position:relative; left:100px">
           <img src="assets/cee_terms.png">
         </div>
       </div>
     </header>
-
+    <br><br>
     <!-- Grid -->
-    <div class="w3-row w3-padding cee-sans">
-      <!-- Left buttons -->
-      <div class="w3-col l4">
-        <!-- Each h4 is the title of a tab -->
-        <div class="w3-white w3-margin">
-          <div id="Tab1-button" class="w3-container w3-padding w3-margin-bottom w3-round-xlarge tab-button"
-            onclick="openLegal('Tab1')" style="background-color: #C350EB;color:#FFFFFF">
-            <h4>TERMS OF USE AND PRIVACY POLICY</h4>
+    <div class="w3-row w3-padding">
+        <!-- Left buttons -->
+        <div class="w3-col l4">
+          <!-- Each h4 is the title of a tab -->
+          <div id="cee-term-menu">
+            <a href="#section-1">
+              <div id="section-button-1" class="w3-container w3-padding w3-margin-bottom w3-round-xlarge tab-term-button active-term-tab">
+                <h4 class="cee-sans">Terms of use and Privacy Policy
+                </h4>
+              </div>
+            </a>
+            <a href="#section-2">
+              <div id="section-button-2" class="w3-container w3-padding w3-margin-bottom w3-round-xlarge tab-term-button">
+                <h4 class="cee-sans">Adverts</h4>
+              </div>
+            </a>
+            <a href="#section-3">
+              <div id="section-button-3" class="w3-container w3-padding w3-margin-bottom w3-round-xlarge tab-term-button">
+                <h4 class="cee-sans">Cookies and Similar Technologies
+
+                </h4>
+              </div>
+            </a>
+            <a href="#section-4">
+              <div id="section-button-4" class="w3-container w3-padding w3-margin-bottom w3-round-xlarge tab-term-button">
+                <h4 class="cee-sans">Compliance with Regulators
+
+                </h4>
+              </div>
+            </a>
+            <a href="#section-5">
+              <div id="section-button-5" class="w3-container w3-padding w3-margin-bottom w3-round-xlarge tab-term-button">
+                <h4 class="cee-sans">Changes to this Privacy Policy
+                </h4>
+              </div>
+            </a>
+            <a href="#section-6">
+              <div id="section-button-6" class="w3-container w3-padding w3-margin-bottom w3-round-xlarge tab-term-button">
+                <h4 class="cee-sans">Liability Exemption
+                </h4>
+              </div>
+            </a>
+            <a href="#section-7">
+              <div id="section-button-7" class="w3-container w3-padding w3-margin-bottom w3-round-xlarge tab-term-button">
+                <h4 class="cee-sans">Cencellation of the services
+                </h4>
+              </div>
+            </a>
           </div>
-          <div id="Tab2-button" class="w3-container w3-padding w3-margin-bottom w3-round-xlarge tab-button"
-            onclick="openLegal('Tab2')">
-            <h4>Intellectual Property</h4>
-          </div>
+          <!-- END Left Buttons Menu -->
         </div>
-        <hr>
-        <!-- END About/Intro Menu -->
-      </div>
 
       <!-- Legal entries -->
-      <div class="w3-col l8 s12">
+      <div class="w3-col l8 s12" style="height:1200px; overflow-y:scroll; scroll-behavior: smooth;">
 
         <!-- Legal paragraph -->
-        <div id="Tab1" class="w3-container w3-white w3-margin w3-padding-large w3-animate-opacity legal">
-          <h3>TERMS OF USE AND PRIVACY POLICY</h3>
-          <div class="w3-justify">
+        <div class="w3-container w3-white w3-margin w3-padding-large w3-animate-opacity legal">
+          <h3 id="section-1" class="cee-andes">Terms of use and Privacy Policy</h3>
+          <div class="w3-justify cee-sans">
             Orbital Point, Iraqi company with CIF B84651900 and domiciled for tax purposes at Sulaymmanyah 60m Street,
             Firdaws Building, Floor 3, Office 6, is the owner of this application Cee ("the application").
-
             This application has been designed to provide radar warnings, real-time traffic alerts and relevant
             information for safer and more efficient driving.
           </div>
-          <h3>INTELLECTUAL PROPERTY</h3>
-          <div class="w3-justify">
+          <h3 class="cee-andes">Intellectural Property</h3>
+          <div class="w3-justify cee-sans">
             The application and all its contents, including but not limited to texts, photographs, graphics, audio and
             video material, software, logos, titles, characters, names and icons are the property of Orbital or, where
             appropriate, of its licensees. The total or partial copying and reproduction of the contents are strictly
             prohibited, as is the processing of inverse engineering using any of the contents used by the application.
           </div>
-          <h3>PRIVACY POLICY</h3>
-          <div class="w3-justify">
+          <h3 class="cee-andes">Privacy Policy</h3>
+          <div class="w3-justify cee-sans">
             At Orbital we care about your privacy. This privacy policy aims to help you to understand what information
             we gather, why we gather and how you can manage your information.
 
             In this Privacy Policy, the term "personal information" refers to the information you provide to us that
             personally identifies you, such as your name, device identifier, email address or your location.
           </div>
-          <h4>WHAT INFORMATION DO WE GATHER AND WHAT DO WE USE IT FOR?</h4>
-          <div class="w3-justify">
+          <h3 class="cee-andes">
+            What Information Do We Gather and What Do We Use It For?
+          </h3>
+          <div class="w3-justify cee-sans">
             <h5>Information on the use of the Application</h5>
 
             When installing the application on your device, the application gathers ANONYMOUS information regarding its
@@ -144,7 +177,7 @@
             </ul>
             For further informaton, please check the <a href="http://www.google.com/policies/privacy">Google privacy
               policy</a>
-            <div class="w3-justify">Services provided by other companies:
+            <div class="w3-justify cee-sans">Services provided by other companies:
               <ul>
                 <li>Facebook Analytics: We use Facebook Analytics for monitoring and analysing the marketing channels
                   related to Facebook. This way, we can obtain better results when launching marketing campaigns aimed
@@ -154,8 +187,8 @@
                     policy</a></li>
               </ul>
             </div>
-            <h3>Information you share with us</h3>
-            <div class="w3-justify">
+            <h3 class="cee-andes">Information you share with us</h3>
+            <div class="w3-justify cee-sans">
               Information that you voluntarily share with us, such as your email address, age, gender, user name or any
               information about your profile that we can use to offer you a more personalized experience. We use your
               data to send you news, statistics and additional information related to our services.
@@ -165,8 +198,8 @@
               the corresponding link in the email messages or write to us at support@Orbital-Point.com. We will not
               share your contact information with any third parties.
             </div>
-            <h3>Location information</h3>
-            <div class="w3-justify">
+            <h3 class="cee-andes">Location information</h3>
+            <div class="w3-justify cee-sans">
               To the extent in which Orbital offers services that record their location and you use these services,
               ITERATION may gather and process your location data to provide services based on said location. Your GPS
               location shall not be accessed without your consent.
@@ -193,8 +226,8 @@
                   active. Your alert will be shown to other users in a completely ANONYMOUS manner.</li>
               </ul>
             </div>
-            <h3>ADVERTS</h3>
-            <div class="w3-justify">
+            <h3 id="section-2" class="cee-andes">Adverts</h3>
+            <div class="w3-justify cee-sans">
               The application may use publicity to provide the service free of charge. When using the application, your
               device automatically sends certain information to our advertising partners. This information includes, for
               example, the name of the application, the type of device and the advertising ID.
@@ -216,128 +249,110 @@
               </ul>
               The application may incorporate integrated purchases for removing adverts.
             </div>
-            <h3>COOKIES AND SIMILAR TECHONOLOGIES</h3>
-            <div class="w3-justify">
-              The application may use cookies and similar technologies. Cookies a small text files that are stored on your device. The application may use cookies for a range of different purposes such as to avoid the need to insert access information or gather statistical information. The user may choose to configure his/her web browser to reject cookies or to warn the user when cookies are sent.
+            <h3 id="section-3" class="cee-andes">Cookies and Similar Technologies</h3>
+            <div class="w3-justify cee-sans">
+              The application may use cookies and similar technologies. Cookies a small text files that are stored on
+              your device. The application may use cookies for a range of different purposes such as to avoid the need
+              to insert access information or gather statistical information. The user may choose to configure his/her
+              web browser to reject cookies or to warn the user when cookies are sent.
             </div>
-            <h3>COMPLIANCE WITH REGULATORS</h3>
+            <h3 id="section-4" class="cee-andes">Compliance with Regulators</h3>
             <h4>GDPR European Union Requirements</h4>
-            <div class="w3-justify">
-              We regularly review our privacy policy and we ensure that the processing of your information meets said policy.
-               The GDPR is the new EU regulation for protecting the privacy of its citizens. 
-               As a user of the application, you hav certain rights regarding how "personal information" is processed. 
-               These rights are described below:
+            <div class="w3-justify cee-sans">
+              We regularly review our privacy policy and we ensure that the processing of your information meets said
+              policy.
+              The GDPR is the new EU regulation for protecting the privacy of its citizens.
+              As a user of the application, you hav certain rights regarding how "personal information" is processed.
+              These rights are described below:
             </div>
             <ul>
               <li>Right to be informed: You have the right to know how your data are processed.</li>
-              <li>Right to access: You have the right to access and a request a copy of your data which have been gathered.</li>
-              <li>Right to rectification: You have the right to modify and update your personal data when incorrect data are being used.</li>
+              <li>Right to access: You have the right to access and a request a copy of your data which have been
+                gathered.</li>
+              <li>Right to rectification: You have the right to modify and update your personal data when incorrect data
+                are being used.</li>
               <li>Right to removal: You have the right to delete all personal data that have been gathered.</li>
-              <li>Right to restriction: Your have the right to prevent a company from processing certain types of personal data.</li>
-              <li>Right to portability of the data: You have the right access your personal data and transfer them to other data controllers.</li>
-              <li>Right to oppose: You have the right to withdraw your consent to the processing of your data for public interest, marketing or research.</li>
-              <li>Right to reject automatic decisions: You have the right to oppose your data from being processed by automatic systems.</li>
-              </ul>
-              <div class="w3-justify">You may submit any of the requests described above by contacting us: support@orbital-point.com</div>
+              <li>Right to restriction: Your have the right to prevent a company from processing certain types of
+                personal data.</li>
+              <li>Right to portability of the data: You have the right access your personal data and transfer them to
+                other data controllers.</li>
+              <li>Right to oppose: You have the right to withdraw your consent to the processing of your data for public
+                interest, marketing or research.</li>
+              <li>Right to reject automatic decisions: You have the right to oppose your data from being processed by
+                automatic systems.</li>
+            </ul>
+            <div class="w3-justify cee-sans">You may submit any of the requests described above by contacting
+              us: support@orbital-point.com</div>
           </div>
-          <h3>CHANGES TO THIS PRIVACY POLICY</h3>
-          <div class="w3-justify">
-            We may change this privacy policy from time to time by publishing the most recent privacy policy and its duration date on our website. In the event of substantially modifying this privacy policy, we may inform of said changes by means of a specific warning in our applications, on our websites, by email or by means of a notification.
+          <h3 id="section-5" class="cee-andes">Changes to this Privacy Policy</h3>
+          <div class="w3-justify cee-sans">
+            We may change this privacy policy from time to time by publishing the most recent privacy policy and its
+            duration date on our website. In the event of substantially modifying this privacy policy, we may inform of
+            said changes by means of a specific warning in our applications, on our websites, by email or by means of a
+            notification.
           </div>
-          <h3>LIABILITY EXEMPTION</h3>
-          <div class="w3-justify">
-            Without prejudice of the legal obligations arising from the application of the Iraqi and European regulations, this application is provided without any kind of express or implicit guarantee regarding its quality, reliability, compatibility, security, performance, purpose, precision or accurateness and non-breach of the rights or legal compliances that may arise for its use regardless of the reason causing the same.
-Use of this application implies that:
+          <h3 id="section-6" class="cee-andes">Liability Exemption</h3>
+          <div class="w3-justify cee-sans">
+            Without prejudice of the legal obligations arising from the application of the Iraqi and European
+            regulations, this application is provided without any kind of express or implicit guarantee regarding its
+            quality, reliability, compatibility, security, performance, purpose, precision or accurateness and
+            non-breach of the rights or legal compliances that may arise for its use regardless of the reason causing
+            the same.
+            Use of this application implies that:
           </div>
           <ul>
             <li>You accept the risks that may arise as a result of using this application.</li>
-            <li>You accept the consequences that may arise from the use of any of the services that this application may provide irrespective of the functionality and purpose of its use.</li>
-            <li>You accept the responsibility for any event that may arise which entails damage to the user or a third-party.</li>
-            <li>You release Orbital from all liability regarding the negative results or undesired consequences involved in a breach or crime of any nature.</li>
-            <li>You are responsible for any illegal use that may be made using the application which involves any regulatory or legal non-compliance.</li>
+            <li>You accept the consequences that may arise from the use of any of the services that this application may
+              provide irrespective of the functionality and purpose of its use.</li>
+            <li>You accept the responsibility for any event that may arise which entails damage to the user or a
+              third-party.</li>
+            <li>You release Orbital from all liability regarding the negative results or undesired consequences involved
+              in a breach or crime of any nature.</li>
+            <li>You are responsible for any illegal use that may be made using the application which involves any
+              regulatory or legal non-compliance.</li>
           </ul>
-          <h3>CANCELLATION OF THE SERVICES</h3>
-          <div class="w3-justify">You may cancel the services of this application at any time by uninstalling the application from your device.</div>
-          <h3>CONTACT</h3>
-          <div class="w3-justify">If you have any question regarding the terms of use or the privacy policy, you may contact us by: support@orbital-point.com</div>
+          <h3 id="section-7" class="cee-andes">Cencellation of the services</h3>
+          <div class="w3-justify cee-sans">You may cancel the services of this application at any time by uninstalling the
+            application from your device.</div>
+          <h3 class="cee-andes">CONTACT</h3>
+          <div class="w3-justify cee-sans">If you have any question regarding the terms of use or the privacy policy, you may
+            contact us by: support@orbital-point.com</div>
           <br>
-          <div class="w3-justify"><em>Latest update: 25 March 2020</em></div>
+          <div class="w3-justify cee-sans"><em>Latest update: 25 March 2020</em></div>
         </div>
-        <div id="Tab2" class="w3-container w3-white w3-margin w3-padding-large w3-animate-opacity legal"
-          style="display:none;">
-          <h3>Tab2</h3>
-          <div class="w3-justify">
-            If you’re under the age required to manage your own Google Account, you must have your parent or legal
-            guardian’s permission to use a Google Account. Please have your parent or legal guardian read these terms
-            with you.
-            If you’re a parent or legal guardian, and you allow your child to use the services, then these terms apply
-            to you and you’re responsible for your child’s activity on the services.
-            Some Google services have additional age requirements as described in their service-specific additional
-            terms and policies.
-          </div>
-          <h3>What's covered in these terms</h3>
-          <div class="w3-justify">
-            We know it’s tempting to skip these Terms of Service, but it’s important to establish what you can expect
-            from us as you use Google services, and what we expect from you.
-          </div>
-          <h3>What you can expect from us</h3>
-          <div class="w3-justify">
-            If you’re under the age required to manage your own Google Account, you must have your parent or legal
-            guardian’s permission to use a Google Account. Please have your parent or legal guardian read these terms
-            with you.
-            If you’re a parent or legal guardian, and you allow your child to use the services, then these terms apply
-            to you and you’re responsible for your child’s activity on the services.
-            Some Google services have additional age requirements as described in their service-specific additional
-            terms and policies.
-            These Terms of Service reflect the way Google’s business works, the laws that apply to our company, and
-            certain things we’ve always believed to be true. As a result, these Terms of Service help define Google’s
-            relationship with you as you interact with our services. For example, these terms include the following
-            topic headings:
-            <br>
-            <ul>
-              <li>What you can expect from us, which describes how we provide and develop our services</li>
-              <li>What we expect from you, which establishes certain rules for using our services</li>
-              <li>Content in Google services, which describes the intellectual property rights to the content you find
-                in our services — whether that content belongs to you, Google, or others</li>
-              <li>In case of problems or disagreements, which describes other legal rights you have, and what to expect
-                in case someone violates these terms</li>
-            </ul>
-          </div>
-        </div>
-
         <!-- END LEGAL ENTRIES -->
-        <hr>
       </div>
 
 
       <!-- END GRID -->
     </div>
     <!-- Footer -->
+    <br>
+    <hr>
     <cee-footer></cee-footer>
     <!-- END w3-content -->
   </div>
 
   <script>
-    function openLegal(legalName) {
-      var i;
-      var x = document.getElementsByClassName("legal");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      document.getElementById(legalName).style.display = "block";
-      //legalName refers to the actual text
-      //legalName-button will refer to the pills
-      var i;
-      var x = document.getElementsByClassName("tab-button");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.backgroundColor = "#F9EFFD";
-        x[i].style.color = "#000000";
+    // Get the container element
+    var btnContainer = document.getElementById("cee-term-menu");
 
-      }
-      legalButton = legalName + "-button";
-      document.getElementById(legalButton).style.backgroundColor = "#C350EB";
-      document.getElementById(legalButton).style.color = "#FFFFFF";
+    // Get all buttons with class="btn" inside the container
+    var btns = btnContainer.getElementsByClassName("tab-term-button");
 
+    // Loop through the buttons and add the active class to the current/clicked button
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active-term-tab");
+
+        // If there's no active class
+        if (current.length > 0) {
+          current[0].className = current[0].className.replace(" active-term-tab", "");
+        }
+
+        // Add the active class to the current/clicked button
+        this.className += " active-term-tab";
+      });
     }
   </script>
 </body>

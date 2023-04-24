@@ -85,7 +85,14 @@
 	width: 120px;
 	left: 300px;
 }
-
+.cee-nav-button{
+  border-radius:50%;
+  border:none;
+  padding:10px;
+  background-color:#374FC4;
+  width:50px;
+  color:white;
+}
 
 
 /* LANDING_EN START */
@@ -226,3 +233,41 @@
     color: #374FC4;
   }
   /* ABOUT END */
+
+  /* POLICY START */
+
+  #cee-policy-menu a{
+    text-decoration: none;
+  }
+  #cee-policy-menu .tab-button{
+    background-color: #EBF8FF;
+    color:#000;
+  }
+  #cee-policy-menu .tab-button:hover{
+    background-color:#36B5FF !important;
+    color:white !important;
+    transition:0.1s;
+  }
+  .active-policy-tab {
+    background-color:#36B5FF !important;
+    color:white !important;
+  }
+/* POLICY END */
+  /* TERMS START */
+  
+  #cee-term-menu a{
+    text-decoration: none;
+  }
+  #cee-term-menu .tab-term-button{
+    background-color: #F9EFFD;
+    color:#000;
+  }
+  #cee-term-menu .tab-term-button:hover{
+    background-color:#C350EB !important;
+    color:white !important;
+    transition:0.1s;
+  }
+  .active-term-tab {
+    background-color:#C350EB !important;
+    color:white !important;
+  }

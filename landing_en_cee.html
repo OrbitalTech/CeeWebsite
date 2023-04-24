@@ -45,25 +45,21 @@
       </div>
     </nav>
     <!-- Navbar (phone) -->
-    <nav class="w3-container w3-center w3-hide-large">
-      <div class="w3-row w3-padding-32">
-        <object data="assets/svg/Logo top left.svg"> </object>
+    <nav class="w3-container w3-padding-32 w3-margin w3-hide-large">
+      <div class="w3-display-container w3-stretch w3-padding-32">
+        <object class="w3-display-left" data="assets/svg/Logo top left.svg" style="width:80%"> </object>
+        <button class="w3-display-right cee-nav-button w3-xlarge" onclick="w3_open()">☰</button>
       </div>
-      <div class="w3-row">
-        <div class="ContainerForNavbar cee-sans">
-          <div class="cee-nav cee-nav-mobile">
-            <a href="#">Home</a>
-            <a href="about_cee.html">About</a>
-            <a href="Terms_en_cee.html">Terms</a>
-            <a href="Policy_en_cee.html">Policy</a>
-            <div class="animation start-home"></div>
-          </div>
-        </div>
+      <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+        <a href="#">Home</a>
+        <a href="about_cee.html">About</a>
+        <a href="Terms_en_cee.html">Terms</a>
+        <a href="Policy_en_cee.html">Policy</a>
       </div>
     </nav>
     <div class="w3-row">
       <div class="w3-col l4 m6">
-        <br><br><br><br><br>
         <div class="cee-header">Ready to get <br>more out of work <br>and driving?</div>
         <br>
         <div class="cee-subheader">We’ve worked extensively in terms of geography and sector, developing a variety of
@@ -78,7 +74,7 @@
           <div class="cee-subheader" style="font-size:12px; display:inline">+1k Drivers Subscribed to cee</div>
         </div>
       </div>
-      <div class="w3-col l8 m6 s12">
+      <div class="w3-col l8 m6 w3-hide-small">
         <div class="ceeSlide">
           <img id="ceeArrow" src="assets/ceeArrow.png" />
           <img id="ceeIcons" src="assets/ceeIcons.png" />
@@ -107,6 +103,15 @@
     </div>
     <!-- MAIN CONTAINER END-->
   </div>
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 </body>
 
 </html>
