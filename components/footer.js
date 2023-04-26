@@ -8,11 +8,14 @@ class Footer extends HTMLElement {
     <footer class="w3-container w3-padding-32 w3-round-xxlarge cee-sans" style="background-color: #ECEEFD";>
       <div class="w3-row">
         <div class="w3-col l4 m4 s12 w3-padding">
-          <img src="assets/logo.png" class="w3-margin-bottom"/>
+          <object data="assets/svg/cee-logo.svg" class="w3-margin-bottom"></object>
           <br>
           <div>
             We’ve worked extensively in terms of geography and sector, developing a variety of work .
           </div>
+          <br>
+          <button class="w3-button w3-hover-none w3-round w3-round-xxlarge cee-download w3-hide-medium w3-hide-large">Download now</button>
+
         </div>
         <div class="w3-col l2 m2 s12 w3-padding">
           <h3 class="cee-footer-heading">Product</h3>
@@ -39,7 +42,7 @@ class Footer extends HTMLElement {
       </div>
       <div class="w3-row">
         <div class="w3-col l6 m6 s12 w3-padding">
-          <button class="w3-button w3-hover-none w3-round w3-round-xxlarge cee-download">Download now</button>
+          <button class="w3-button w3-hover-none w3-round w3-round-xxlarge cee-download w3-hide-small">Download now</button>
         </div>
         <div class="w3-col l6 m6 s12 cee-socials">
           <a href="#" class="fa-stack fa-2x">
