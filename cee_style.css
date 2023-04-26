@@ -42,7 +42,7 @@
 	position: absolute;
 	height: 50px;
 	/* height: 5px; */
-	top: 10%;
+	top: 8%;
 	/* bottom: 0; */
 	margin-left:5px;
 	z-index: 0;
@@ -53,14 +53,23 @@
 .cee-nav a:nth-child(1){
 	width: 105px;
 }
-.cee-nav .start-home, a:nth-child(1):hover~.animation{
+.cee-nav a:nth-child(1):hover~.animation{
+	width: 100px;
+	left: 0;
+}
+.cee-nav .start-home{
 	width: 100px;
 	left: 0;
 }
 .cee-nav a:nth-child(2){
 	width: 100px;
 }
+
 .cee-nav a:nth-child(2):hover~.animation{
+	width: 100px;
+	left: 105px;
+}
+.cee-nav .start-about{
 	width: 100px;
 	left: 105px;
 }
@@ -71,10 +80,18 @@
 	width: 100px;
 	left: 210px;
 }
+.cee-nav .start-terms{
+	width: 100px;
+	left: 210px;
+}
 .cee-nav a:nth-child(4){
 	width: 100px;
 }
 .cee-nav a:nth-child(4):hover~.animation{
+	width: 85px;
+	left: 322px;
+}
+.cee-nav .start-policy{
 	width: 85px;
 	left: 322px;
 }
@@ -93,7 +110,9 @@
   width:50px;
   color:white;
 }
-
+.cee-nav-border{
+  border: 1px solid #EAEAEA;
+}
 
 /* LANDING_EN START */
 .cee-button:hover {

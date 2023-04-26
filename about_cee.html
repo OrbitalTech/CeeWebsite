@@ -20,19 +20,25 @@
 and is wrapped around the whole page content, except for the footer in this example -->
   <div class="w3-content" style="max-width:1600px">
     <!-- Navbar -->
-    <nav class="w3-center">
+    <!-- Navbar (none-phone) -->
+    <nav class="w3-hide-small w3-hide-medium">
       <div class="w3-cell-row w3-padding-32">
         <div class="w3-cell w3-cell-middle w3-mobile">
-          <img src="assets/logo_slogan.png" />
+          <object data="assets/svg/Logo top left.svg"> </object>
         </div>
-        <div class="w3-cell w3-cell-middle w3-mobile w3-border w3-round-xxlarge">
-          <div class="w3-round-xxlarge w3-white w3-xlarge w3-padding" style="max-width:fit-content">
-            <a href="landing_en_cee.html" class="w3-bar-item cee-button w3-button w3-hover-none w3-round-xxlarge">Home</a>
-            <a href="about_cee.html" class="w3-bar-item cee-button w3-button w3-hover-none w3-round-xxlarge">About</a>
+        <div class="ContainerForNavbar cee-sans">
+          <div class="w3-cell w3-cell-middle w3-mobile cee-nav cee-nav-border">
+            <a href="landing_en_cee.html">Home</a>
+            <a href="about_cee.html">About</a>
+            <a href="Terms_en_cee.html">Terms</a>
+            <a href="Policy_en_cee.html">Policy</a>
+            <div class="animation start-about"></div>
           </div>
         </div>
         <div class="w3-cell w3-cell-middle w3-mobile">
-          <img onclick="document.getElementById('id01').style.display='block'" src="assets/download_pill.png" />
+          <div class="svg-button" onclick="document.getElementById('id01').style.display='block'">
+            <object data="assets/svg/download pill top right.svg"></object>
+          </div>
         </div>
       </div>
     </nav>
