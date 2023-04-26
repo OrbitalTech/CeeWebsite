@@ -396,6 +396,7 @@
   text-align: left;
   width: 100%;
   transition: all 0.3s;
+  text-decoration:none;
 }
 .content .nav-links li a:hover {
   color: #374FC4;
