@@ -153,8 +153,10 @@
   .ceeSlide {
     position: relative;
   }
-
   .ceeSlide img {
+    position: absolute;
+  }
+  .ceeSlide lottie-player {
     position: absolute;
   }
 
@@ -175,14 +177,14 @@
   }
 
   .ceeSlide #ceePremium {
-    left: 27%;
+    left: 10%;
     top: 400px;
     z-index: 1;
   }
 
   .ceeSlide #ceeArrow {
     left: 20%;
-    top: 300px;
+    top: 100px;
   }
 
   .ceeSlide #ceeSpeeds {
