@@ -261,11 +261,12 @@
   #cee-policy-menu a{
     text-decoration: none;
   }
-  #cee-policy-menu .tab-button{
+  #cee-policy-menu .tab-policy-button{
     background-color: #EBF8FF;
     color:#000;
   }
-  #cee-policy-menu .tab-button:hover{
+  
+  #cee-policy-menu .tab-policy-button:hover{
     background-color:#36B5FF !important;
     color:white !important;
     transition:0.1s;
