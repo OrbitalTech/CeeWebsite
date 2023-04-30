@@ -13,6 +13,9 @@
  }
 
 /* CEE-NAV */
+.ContainerForNavbar{
+  width:500px;
+}
 .cee-nav{
 
 	position: relative;
