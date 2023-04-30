@@ -42,7 +42,7 @@ class Footer extends HTMLElement {
       </div>
       <div class="w3-row">
         <div class="w3-col l6 m6 s12 w3-padding">
-          <button class="w3-button w3-hover-none w3-round w3-round-xxlarge cee-download w3-hide-small">Download now</button>
+          <button class="w3-button w3-hover-none w3-round w3-round-xxlarge cee-download-button w3-hide-small">Download now</button>
         </div>
         <div class="w3-col l6 m6 s12 cee-socials">
           <a href="#" class="fa-stack fa-2x">

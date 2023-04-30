@@ -1,3 +1,29 @@
+/* CEE DOWNLOAD HOVER EFFECT */
+.cee-download-button {
+  padding: 1em 1.5em;
+  background-color:  #374FC4;
+  border-radius: 1.65em;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color:white;
+  border:none;
+  transition: 0.3s ease-in-out;
+}
+
+.cee-download-button:hover{
+  background-color:#B6BEF6;
+  color:black;
+}
+
+.w3-button{
+  transition:0.3s ease-in-out;
+}
+/*
+
+/* CEE DOWNLOAD HOVER EFFECT END */
+
 /*CEE-NAV CLICKABLE SVG*/
 .svg-button {
   position: relative;
@@ -13,6 +39,16 @@
  }
 
 /* CEE-NAV */
+
+.cee-header-download{
+  background-color:#171729;
+  color:white;
+  width:250px;
+  height:70px;
+  border-radius:50px;
+  padding:10px;
+  font-weight: 100;
+}
 .ContainerForNavbar{
   width:500px;
 }
@@ -138,14 +174,6 @@
     font-size: 15px;
   }
 
-  .cee-download {
-    color: #fff;
-    background-color: #374FC4;
-    font-family: 'sans', sans-serif !important;
-    font-size: 12px;
-    padding: 16px;
-  }
-
   .cee-download-modal {
     font-family: 'Andes-lighter', sans-serif !important;
     font-size: 40px;
@@ -210,13 +238,7 @@
   footer a{
     text-decoration: none;
   }
-  .cee-download {
-    color: #fff;
-    background-color: #374FC4;
-    font-family: 'sans', sans-serif !important;
-    font-size: 12px;
-    padding: 16px;
-  }
+
   /* TERMS END */
 
   /* ABOUT START*/
@@ -231,13 +253,7 @@
   footer a{
     text-decoration: none;
   }
-  .cee-download {
-    color: #fff;
-    background-color: #374FC4;
-    font-family: 'sans', sans-serif !important;
-    font-size: 12px;
-    padding: 16px;
-  }
+
   .cee-footer-heading {
     font-family: 'Andes', sans-serif !important;
     font-size: 30px;
@@ -256,6 +272,17 @@
   }
   .cee-socials {
     color: #374FC4;
+    transition:0.2s ease-in-out;
+  }
+  .cee-socials .fa-stack:hover{
+    color:white;
+    transition:0.2s ease-in-out;
+
+  }
+  .cee-socials .fa-stack:hover .fa-brands{
+    color:#374FC4;
+    transition:0.2s ease-in-out;
+
   }
   /* ABOUT END */
 
