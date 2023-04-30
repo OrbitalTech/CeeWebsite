@@ -20,6 +20,10 @@
 .w3-button{
   transition:0.3s ease-in-out;
 }
+
+.cee-fly:hover {
+  transform: translateY(-7px);
+}
 /*
 
 /* CEE DOWNLOAD HOVER EFFECT END */
