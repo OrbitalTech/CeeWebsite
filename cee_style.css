@@ -55,6 +55,7 @@
 }
 .ContainerForNavbar{
   width:500px;
+  margin-left:15px;
 }
 .cee-nav{
 
@@ -184,9 +185,11 @@
     color: #374FC4;
     font-weight: bold;
   }
-
+/*SLIDER FOR ALL SIZES */
+/* slider for phone */
   .ceeSlide {
     position: relative;
+    overflow:visible;
   }
   .ceeSlide img {
     position: absolute;
@@ -195,39 +198,161 @@
     position: absolute;
   }
 
-  .ceeSlide #ceePhone {
-    left: 50%;
+  .ceeSlide #ceePhone-sm {
+    width:100%;
+    height:550px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
   }
 
-  .ceeSlide #ceeIcons {
-    left: 35%;
+  .ceeSlide #ceeIcons-sm {
+    right: 10%;
+    top: 100px;
+    width:100px;
+    height:100px;
+    z-index: 100;
+  }
+
+  .ceeSlide #ceeGauge-sm {
+    left: 60%;
     top: 200px;
+    z-index: 1;
+    height:200px;
+    width:200px;
   }
 
-  .ceeSlide #ceeGauge {
+  .ceeSlide #ceePremium-sm {
+    left: 5%;
+    top: 250px;
+    z-index: 1;
+    width:220px;
+    height:150px;
+  }
+
+  .ceeSlide #ceeArrow-sm {
+    left: 5%;
+    top: 50px;
+    width:200px;
+    height:300px;
+    z-index:2;
+  }
+
+  .ceeSlide #ceeSpeeds-sm {
+    left: 70%;
+    top: 400px;
+    z-index: 1;
+    
+  }
+  /* SLIDER for small end */
+
+  /* SLIDER for medium */
+
+  .ceeSlide #ceePhone-md {
+    width:100%;
+    height:550px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .ceeSlide #ceeIcons-md {
     left: 70%;
     top: 100px;
-    z-index: 1;
+    width:100px;
+    height:100px;
+    z-index: 100;
 
   }
 
-  .ceeSlide #ceePremium {
+  .ceeSlide #ceeGauge-md {
+    left: 60%;
+    top: 200px;
+    z-index: 1;
+    height:200px;
+    width:200px;
+  }
+
+  .ceeSlide #ceePremium-md {
+    left: 1%;
+    top: 250px;
+    z-index: 1;
+    width:220px;
+    height:180px;
+  }
+
+  .ceeSlide #ceeArrow-md {
+    left: 5%;
+    top: 50px;
+    width:150px;
+    height:250px;
+    z-index:2;
+  }
+
+  .ceeSlide #ceeSpeeds-md {
+    left: 50%;
+    top: 400px;
+    z-index: 1;
+    height:100px;
+    width:200px;
+  }
+  /* SLIDER for medium */
+
+  /* SLIDER FOR LARGE */
+
+
+  .ceeSlide #ceePhone-lg {
+    width:100%;
+    height:700px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .ceeSlide #ceeIcons-lg {
+    left: 70%;
+    top: 100px;
+    width:120px;
+    height:120px;
+    z-index: 100;
+
+  }
+
+  .ceeSlide #ceeGauge-lg {
+    left: 50%;
+    top: 150px;
+    z-index: 1;
+    height:300px;
+    width:300px;
+  }
+
+  .ceeSlide #ceePremium-lg {
     left: 10%;
-    top: 400px;
+    top: 300px;
     z-index: 1;
+    width:350px;
+    height:220px;
   }
 
-  .ceeSlide #ceeArrow {
+  .ceeSlide #ceeArrow-lg {
     left: 20%;
-    top: 100px;
+    top: 150px;
+    width:150px;
+    height:250px;
+    z-index:2;
   }
 
-  .ceeSlide #ceeSpeeds {
-    left: 70%;
+  .ceeSlide #ceeSpeeds-lg {
+    left: 60%;
     top: 400px;
     z-index: 1;
-
+    height:300px;
+    width:300px;
   }
+  /* SLIDER FOR LARGE END */
   /* LANDING EN END */
 
   /*TERMS START */
@@ -379,9 +504,9 @@
 	 transform: translateX(-50%);
 	 z-index: 1;
 } */
+
  .content {
-  /* background: aliceblue; */
-  display: block;
+  display:block;
   height: 100%;
   overflow: hidden;
   width: 100%;
