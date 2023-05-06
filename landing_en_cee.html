@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script src="components/footer.js" type="text/javascript" defer></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <!-- <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script> -->
+
   <style>
 
 
@@ -132,17 +134,17 @@
       </div>
       <div class="w3-col l8 m6 w3-hide-small w3-hide-medium">
         <div class="ceeSlide">
-          <lottie-player id="ceeIcons-lg" src="/assets/hero_lottie/camera and crash.json" background="transparent"
+          <lottie-player class="layer" data-speed="0.6" id="ceeIcons-lg" src="/assets/hero_lottie/camera and crash.json" background="transparent"
             speed="1" autoplay></lottie-player>
-          <lottie-player id="ceeArrow-lg" src="/assets/hero_lottie/Current Average Speed.json" background="transparent"
+          <lottie-player class="layer" data-speed="0.7" id="ceeArrow-lg" src="/assets/hero_lottie/Current Average Speed.json" background="transparent"
             speed="1" autoplay></lottie-player>
-          <lottie-player id="ceeSpeeds-lg" src="/assets/hero_lottie/speedlimite.json" background="transparent" speed="1"
+          <lottie-player class="layer" data-speed="0.6" id="ceeSpeeds-lg" src="/assets/hero_lottie/speedlimite.json" background="transparent" speed="1"
             autoplay></lottie-player>
-          <lottie-player id="ceePremium-lg" src="/assets/hero_lottie/get_acces.json" background="transparent" speed="1"
+          <lottie-player class="layer" data-speed="-0.80" id="ceePremium-lg" src="/assets/hero_lottie/get_acces.json" background="transparent" speed="1"
             autoplay></lottie-player>
-          <lottie-player id="ceeGauge-lg" src="/assets/hero_lottie/speedometer.json" background="transparent" speed="1"
+          <lottie-player class="layer" data-speed="-0.5" id="ceeGauge-lg" src="/assets/hero_lottie/speedometer.json" background="transparent" speed="1"
             autoplay></lottie-player>
-          <lottie-player id="ceePhone-lg" src="/assets/hero_lottie/Mobile.json" background="transparent" speed="1"
+          <lottie-player class="layer" data-speed="0.7" id="ceePhone-lg" src="/assets/hero_lottie/Mobile.json" background="transparent" speed="1"
             autoplay></lottie-player>
         </div>
       </div>
@@ -167,7 +169,22 @@
     <!-- MAIN CONTAINER END-->
   </div>
 
+<script>
+  document.addEventListener("mouseover", parallax);
+  layer = document.getElementsByClassName("layer");
+  function parallax(e){
+    this.querySelectorAll('.layer').forEach(layer => {
+      const speed = layer.getAttribute('data-speed')
 
+      const x = (window.innerWidth - e.pageX*speed)/100
+      const y = (window.innerWidth - e.pageY*speed)/100
+
+      layer.style.transform = `translateX(${x}px) translateY(${x}px)`
+      layer.style.transition = `1s ease-in-out`
+
+    })
+  }
+</script>    
 </body>
 
 </html>
