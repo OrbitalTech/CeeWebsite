@@ -84,7 +84,10 @@ class Footer extends HTMLElement {
           </div>        
         </div>
       </div>
+
     </footer>
+    <div class="w3-row" style="height:50px;"> <!-- SPACER !--></div>
+
     `;
   }
 
